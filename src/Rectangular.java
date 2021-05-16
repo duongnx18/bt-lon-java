@@ -3,7 +3,9 @@ import java.util.Arrays;
 public class Rectangular {
     private Point[] points = new Point[8];
     public Rectangular() {
-        Arrays.fill(points, new Point());
+        for(int i = 0; i < 8; i++) {
+        	points[i] = new Point();
+        }
     }
     public void setPoints(String[] pointsInput) {
         for(int i = 0; i < pointsInput.length; i++) {
